@@ -1,0 +1,51 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<li *ngFor="let hero of heroes">
+   {{hero}}
+</li>
+
+<br>
+
+<li *ngFor="let student of students">
+   {{ student.name }}
+   {{ student.grade }}
+</li>
+
+<br>
+
+<li *ngFor="let movie of movies">
+  {{movie.title}}
+  {{movie.director}}
+</li>
+
+<br>
+
+<li *ngFor="let player of players">
+    {{player.name}}
+    {{player.rank}}
+</li>
+
+<br>
+
+<div class="container">
+  <h2>Employee Details</h2>
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Job</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{employee.name}}</td>
+        <td>{{employee.email}}</td>
+        <td>{{employee.job}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
